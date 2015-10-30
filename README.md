@@ -1,5 +1,5 @@
 # grouch
-An object store written Go
+An object store written in Go
 
 I'm building it still...
 
