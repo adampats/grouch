@@ -12,8 +12,8 @@ import (
 )
 
 type Configuration struct {
-    Directory string
-		Mode string
+  Directory string
+	Mode string
 }
 
 func readConfig(file string) Configuration {
@@ -36,7 +36,7 @@ func main() {
 	fmt.Printf("Mode: %s\n", config.Mode)
 
 	api := rest.NewApi()
-  api.Use(rest.DefaultDevStack...)
+	api.Use(rest.DefaultDevStack...)
 
 	endpoint := "/" + config.Directory + "/#file"
 	router, err := rest.MakeRouter(
